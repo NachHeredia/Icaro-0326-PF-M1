@@ -502,138 +502,6 @@ main {
     transform: translateY(-2px);
 }
 
-
-@media (max-width: 1024px) {
-    .mainBanner {
-        margin: var(--spacing-md);
-        margin-top: 100px;
-        border-radius: 40px;
-        padding: var(--spacing-lg) var(--spacing-md);
-    }
-
-    .aboutMe {
-        grid-template-columns: 1.2fr 1fr;
-        margin: var(--spacing-lg);
-        gap: var(--spacing-md);
-    }
-
-    .aboutText h2 {
-        font-size: 2.5rem;
-    }
-
-    .aboutText p {
-        font-size: 1rem;
-        margin-right: 0;
-    }
-
-    .aboutImage img {
-        height: auto;
-        width: 100%;
-        max-width: 280px;
-        aspect-ratio: 3 / 4;
-        object-fit: fill;
-    }
-
-    .cardsServices {
-        gap: var(--spacing-md);
-    }
-
-    .cardVisual {
-        height: 240px;
-    }
-
-    .mainFooter {
-        margin: var(--spacing-md);
-    }
-}
-
-@media (max-width: 600px) {
-
-    .hamburger {
-        display: flex;
-    }
-
-    .navbar ul {
-        position: absolute;
-        top: calc(100% + var(--spacing-sm));
-        right: 0;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--spacing-xs);
-        width: 200px;
-        padding: var(--spacing-md);
-        border-radius: 20px;
-
-        background-color: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0 4px 24px rgba(30, 30, 36, 0.08);
-
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-10px);
-        transition: opacity var(--transition-fast), transform var(--transition-fast);
-    }
-
-    .menuToggle:checked ~ ul {
-        opacity: 1;
-        pointer-events: auto;
-        transform: translateY(0);
-    }
-
-    .menuToggle:checked ~ .hamburger span:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
-    }
-    .menuToggle:checked ~ .hamburger span:nth-child(2) {
-        opacity: 0;
-    }
-    .menuToggle:checked ~ .hamburger span:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
-    }
-
-    .mainBanner {
-        margin: var(--spacing-sm);
-        margin-top: 90px;
-        border-radius: 24px;
-        padding: var(--spacing-lg) var(--spacing-sm);
-        min-height: 70vh;
-    }
-
-    .aboutMe {
-        grid-template-columns: 1fr;
-        margin: var(--spacing-md);
-        text-align: center;
-        justify-items: center;
-    }
-
-    .aboutText h2 {
-        font-size: 2rem;
-    }
-
-    .aboutText p {
-        margin-right: 0;
-        font-size: 1rem;
-    }
-
-    .aboutImage {
-        justify-content: center;
-    }
-
-    .aboutImage img {
-        width: 100%;
-        max-width: 320px;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        border-radius: 24px;
-    }
-
-    .cardVisual::before {
-    width: 160px;
-    height: 160px;
-}
-}
-
 .contactPage {
     background-image: url('../images/gradients/gradient-1.jpg');
     background-size: cover;
@@ -726,3 +594,153 @@ main {
     align-self: flex-start;
     margin-top: var(--spacing-xs);
 }
+
+
+@media (max-width: 1024px) {
+    .mainBanner {
+        margin: var(--spacing-md);
+        margin-top: 100px;
+        border-radius: 40px;
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .aboutMe {
+        grid-template-columns: 1.2fr 1fr;
+        margin: var(--spacing-lg);
+        gap: var(--spacing-md);
+    }
+
+    .aboutText h2 {
+        font-size: 2.5rem;
+    }
+
+    .aboutText p {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .aboutImage img {
+        height: auto;
+        width: 100%;
+        max-width: 280px;
+        aspect-ratio: 3 / 4;
+        object-fit: fill;
+    }
+
+    .cardsServices {
+        gap: var(--spacing-md);
+    }
+
+    .cardVisual {
+        height: 240px;
+    }
+
+    .mainFooter {
+        margin: var(--spacing-md);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: calc(100% + var(--spacing-sm));
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+        width: 200px;
+        padding: var(--spacing-md);
+        border-radius: 20px;
+
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 24px rgba(30, 30, 36, 0.08);
+
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: opacity var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .menuToggle:checked~ul {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .menuToggle:checked~.hamburger span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menuToggle:checked~.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menuToggle:checked~.hamburger span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .mainBanner {
+        margin: var(--spacing-sm);
+        margin-top: 90px;
+        border-radius: 24px;
+        padding: var(--spacing-lg) var(--spacing-sm);
+        min-height: 70vh;
+    }
+
+    .aboutMe {
+        grid-template-columns: 1fr;
+        margin: var(--spacing-md);
+        text-align: center;
+        justify-items: center;
+    }
+
+    .aboutText h2 {
+        font-size: 2rem;
+    }
+
+    .aboutText p {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    .aboutImage {
+        justify-content: center;
+    }
+
+    .aboutImage img {
+        width: 100%;
+        max-width: 320px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 24px;
+    }
+
+    .cardVisual::before {
+        width: 160px;
+        height: 160px;
+    }
+
+    .contactSection {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        padding: 120px var(--spacing-sm) var(--spacing-lg);
+        text-align: center;
+    }
+
+    .contactIntro h1 {
+        font-size: 2rem;
+    }
+
+    .contactForm {
+        padding: var(--spacing-md);
+    }
+}
+
