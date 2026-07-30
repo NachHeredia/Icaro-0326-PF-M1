@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Hago Diseños | Nach Heredia</title>
+</head>
+
+<body class="contactPage">
+
+    <header id="top">
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="./images/Logo mioiconoAUTITO.png" alt="Logo HD">
+            </a>
+            <input type="checkbox" id="menuToggle" class="menuToggle">
+            <label for="menuToggle" class="hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aboutMe">About Me</a></li>
+                <li><a href="contact.html">Get in touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contactSection">
+            <div class="contactIntro">
+                <h1>Contact me</h1>
+                <p>I've happy to answer your questions.</p>
+            </div>
+
+            <form class="contactForm" action="#" method="post">
+                <div class="formGroup">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                </div>
+
+                <div class="formGroup">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                </div>
+
+                <div class="formGroup">
+                    <label for="message">How can I help you?</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary formSubmit">
+                    <span>Send message</span>
+                    <span class="btn-icon" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="mainFooter">
+        <div class="footerBg">
+            <div class="footerCta">
+                <h2>¿Proyect in mind?</h2>
+                <a href="contact.html" class="btn btn-primary">
+                    <span>Get in touch</span>
+                    <span class="btn-icon" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <div class="footerPanel">
+                <div class="footerTop">
+                    <img src="./images/Logo mioiconoAUTITO.png" alt="Logo Hago Diseños" class="footerLogo">
+                    <p class="footerName">Hago Diseños | Nach Heredia</p>
+                </div>
+
+                <hr class="footerDivider">
+
+                <nav class="footerNav">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="index.html#aboutMe">About me</a>
+                </nav>
+
+                <hr class="footerDivider">
+
+                <div class="socialIcons">
+                    <a href="https://www.behance.net/ignacioheredia" target="_blank" title="Behance">
+                        <img src="./images/social media icons/behance.png" alt="Behance">
+                    </a>
+                    <a href="https://www.instagram.com/hago.disenios/?hl=es" target="_blank" title="Instagram">
+                        <img src="./images/social media icons/instagram (1).png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/nachheredia/" target="_blank" title="Linked In">
+                        <img src="./images/social media icons/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/NachHeredia" target="_blank" title="Git Hub">
+                        <img src="./images/social media icons/github.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -633,3 +633,96 @@ main {
     height: 160px;
 }
 }
+
+.contactPage {
+    background-image: url('../images/gradients/gradient-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contactSection {
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: 140px var(--spacing-xl) var(--spacing-xl);
+}
+
+
+.contactIntro h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--brand-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.contactIntro p {
+    font-size: 1.1rem;
+    color: var(--brand-dark);
+}
+
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    border-radius: 24px;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(30, 30, 36, 0.12);
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.formGroup label {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.formGroup input,
+.formGroup textarea {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    padding: var(--spacing-sm);
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+    color: var(--text-secondary);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(184, 169, 232, 0.3);
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.formSubmit {
+    align-self: flex-start;
+    margin-top: var(--spacing-xs);
+}
