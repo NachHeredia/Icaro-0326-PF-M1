@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Services</title>
+</head>
+
+<body class="servicesPage">
+
+    <header id="top">
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="./images/Logo mioiconoAUTITO.png" alt="Logo HD">
+            </a>
+            <input type="checkbox" id="menuToggle" class="menuToggle">
+            <label for="menuToggle" class="hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aboutMe">About Me</a></li>
+                <li><a href="contact.html">Get in touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servicesSection">
+            <div class="tittleServices">
+                <h1>Services</h1>
+            </div>
+
+            <div class="cardsServices">
+                <label for="modalPhotography" class="card">
+                    <div class="cardVisual">
+                        <img src="./images/services icons/cameraiconoAUTITO.png" alt="Icono fotografia">
+                    </div>
+                    <h3>Photography</h3>
+                </label>
+
+                <label for="modalVideo" class="card">
+                    <div class="cardVisual">
+                        <img src="./images/services icons/cineiconoAUTITO.png" alt="Icono edición de video">
+                    </div>
+                    <h3>Video Edition</h3>
+                </label>
+
+                <label for="modalMotion" class="card">
+                    <div class="cardVisual">
+                        <img src="./images/services icons/motioniconoAUTITO.png" alt="Icono motion graphics">
+                    </div>
+                    <h3>Motion Graphics</h3>
+                </label>
+
+                <label for="modalUxui" class="card">
+                    <div class="cardVisual">
+                        <img src="./images/services icons/UX-UIiconoAUTITO.png" alt="Icono ux/ui">
+                    </div>
+                    <h3>UX/UI Design</h3>
+                </label>
+            </div>
+        </section>
+
+
+        <input type="checkbox" id="modalPhotography" class="modalToggle">
+        <div class="modalOverlay">
+            <label for="modalPhotography" class="modalClose" aria-label="Cerrar">✕</label>
+
+            <div class="modalContent">
+                <h2>Photography</h2>
+
+                <div class="carousel">
+                    <input type="radio" name="photoSlide" id="photoSlide1" class="slideRadio" checked>
+                    <input type="radio" name="photoSlide" id="photoSlide2" class="slideRadio">
+
+                    <div class="carouselTrack">
+                        <div class="slide">
+                            <img src="./assets/photography/Boda Islas Mujeres/elegir esta.jpg" alt="Boda Isla Mujeres">
+                            <p class="slideTitle">Boda Isla Mujeres</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/photography/Boda Isla Mujeres/HU7A1350.jpg" alt="Boda Isla Mujeres">
+                            <p class="slideTitle">Boda Isla Mujeres</p>
+                        </div>
+                    </div>
+
+
+                    <label for="photoSlide2" class="arrow arrowPrev prevFor1" aria-label="Anterior">‹</label>
+                    <label for="photoSlide1" class="arrow arrowPrev prevFor2" aria-label="Anterior">‹</label>
+
+                    <label for="photoSlide2" class="arrow arrowNext nextFor1" aria-label="Siguiente">›</label>
+                    <label for="photoSlide1" class="arrow arrowNext nextFor2" aria-label="Siguiente">›</label>
+
+
+                    <div class="dots">
+                        <label for="photoSlide1" class="dot" aria-label="Slide 1"></label>
+                        <label for="photoSlide2" class="dot" aria-label="Slide 2"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="modalVideo" class="modalToggle">
+        <div class="modalOverlay">
+            <label for="modalVideo" class="modalClose" aria-label="Cerrar">✕</label>
+
+            <div class="modalContent">
+                <h2>Video Edition</h2>
+
+                <div class="carousel">
+                    <input type="radio" name="videoSlide" id="videoSlide1" class="slideRadio" checked>
+                    <input type="radio" name="videoSlide" id="videoSlide2" class="slideRadio">
+
+                    <div class="carouselTrack">
+                        <div class="slide">
+                            <video src="./assets/videos/premiere 2.mp4" alt="Video 1" controls>
+                            <p class="slideTitle">Year Recap</p>
+                        </div>
+                        <div class="slide">
+                            <video src="./assets/videos/Video premiere.mp4" alt="Dia de la mujer" controls>
+                            <p class="slideTitle">Woman's Day 2026</p>
+                        </div>
+                    </div>
+
+                    <label for="videoSlide2" class="arrow arrowPrev prevFor1" aria-label="Anterior">‹</label>
+                    <label for="videoSlide1" class="arrow arrowPrev prevFor2" aria-label="Anterior">‹</label>
+
+                    <label for="videoSlide2" class="arrow arrowNext nextFor1" aria-label="Siguiente">›</label>
+                    <label for="videoSlide1" class="arrow arrowNext nextFor2" aria-label="Siguiente">›</label>
+
+                    <div class="dots">
+                        <label for="videoSlide1" class="dot" aria-label="Slide 1"></label>
+                        <label for="videoSlide2" class="dot" aria-label="Slide 2"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="modalMotion" class="modalToggle">
+        <div class="modalOverlay">
+            <label for="modalMotion" class="modalClose" aria-label="Cerrar">✕</label>
+
+            <div class="modalContent">
+                <h2>Motion Graphics</h2>
+
+                <div class="carousel">
+                    <input type="radio" name="motionSlide" id="motionSlide1" class="slideRadio" checked>
+                    <input type="radio" name="motionSlide" id="motionSlide2" class="slideRadio">
+
+                    <div class="carouselTrack">
+                        <div class="slide">
+                            <video src="./assets/motion/after 2.mp4" alt="Workers Day" controls>
+                            <p class="slideTitle">Worker's Day</p>
+                        </div>
+                        <div class="slide">
+                            <video src="./assets/motion/after.mp4" alt="Social Media animations" controls>
+                            <p class="slideTitle">Social Media animations</p>
+                        </div>
+                    </div>
+
+                    <label for="motionSlide2" class="arrow arrowPrev prevFor1" aria-label="Anterior">‹</label>
+                    <label for="motionSlide1" class="arrow arrowPrev prevFor2" aria-label="Anterior">‹</label>
+
+                    <label for="motionSlide2" class="arrow arrowNext nextFor1" aria-label="Siguiente">›</label>
+                    <label for="motionSlide1" class="arrow arrowNext nextFor2" aria-label="Siguiente">›</label>
+
+                    <div class="dots">
+                        <label for="motionSlide1" class="dot" aria-label="Slide 1"></label>
+                        <label for="motionSlide2" class="dot" aria-label="Slide 2"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <input type="checkbox" id="modalUxui" class="modalToggle">
+        <div class="modalOverlay">
+            <label for="modalUxui" class="modalClose" aria-label="Cerrar">✕</label>
+
+            <div class="modalContent">
+                <h2>UX/UI Design</h2>
+
+                <div class="carousel">
+                    <input type="radio" name="uxuiSlide" id="uxuiSlide1" class="slideRadio" checked>
+                    <input type="radio" name="uxuiSlide" id="uxuiSlide2" class="slideRadio">
+
+                    <div class="carouselTrack">
+                        <div class="slide">
+                            <img src="./assets/dev/WIREFRAME CHECK OUT SHOPPING CART.jpg" alt="Case Redesign">
+                            <p class="slideTitle">Check Out Redesign</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/dev/WIREFRAME FINANCE APP.jpg" alt="Case Redesign">
+                            <p class="slideTitle">Redesign Finance App</p>
+                        </div>
+                    </div>
+
+                    <label for="uxuiSlide2" class="arrow arrowPrev prevFor1" aria-label="Anterior">‹</label>
+                    <label for="uxuiSlide1" class="arrow arrowPrev prevFor2" aria-label="Anterior">‹</label>
+
+                    <label for="uxuiSlide2" class="arrow arrowNext nextFor1" aria-label="Siguiente">›</label>
+                    <label for="uxuiSlide1" class="arrow arrowNext nextFor2" aria-label="Siguiente">›</label>
+
+                    <div class="dots">
+                        <label for="uxuiSlide1" class="dot" aria-label="Slide 1"></label>
+                        <label for="uxuiSlide2" class="dot" aria-label="Slide 2"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Acá van los 4 bloques de modal (uno por disciplina) -->
+        <!-- Lo armamos en el próximo paso, empezando por Photography -->
+
+    </main>
+
+    <footer class="mainFooter">
+        <div class="footerBg">
+            <div class="footerCta">
+                <h2>¿Proyect in mind?</h2>
+                <a href="contact.html" class="btn btn-primary">
+                    <span>Get in touch</span>
+                    <span class="btn-icon" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <div class="footerPanel">
+                <div class="footerTop">
+                    <img src="./images/Logo mioiconoAUTITO.png" alt="Logo Hago Diseños" class="footerLogo">
+                    <p class="footerName">Hago Diseños | Nach Heredia</p>
+                </div>
+
+                <hr class="footerDivider">
+
+                <nav class="footerNav">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="index.html#aboutMe">About me</a>
+                </nav>
+
+                <hr class="footerDivider">
+
+                <div class="socialIcons">
+                    <a href="https://www.behance.net/ignacioheredia" target="_blank" title="Behance">
+                        <img src="./images/social media icons/behance.png" alt="Behance">
+                    </a>
+                    <a href="https://www.instagram.com/hago.disenios/?hl=es" target="_blank" title="Instagram">
+                        <img src="./images/social media icons/instagram (1).png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/nachheredia/" target="_blank" title="Linked In">
+                        <img src="./images/social media icons/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/NachHeredia" target="_blank" title="Git Hub">
+                        <img src="./images/social media icons/github.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
