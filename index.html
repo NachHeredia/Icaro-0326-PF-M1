@@ -62,9 +62,9 @@
                     <br>
                     If you're interested in my profile
                 </p>
-                    <a href="contact.html" class="btn btn-primary">
-                        <span> Let's talk! 🚀</span>
-                    </a>
+                <a href="contact.html" class="btn btn-primary">
+                    <span> Let's talk! 🚀</span>
+                </a>
             </div>
             <div class="aboutImage">
                 <img src="./images/foto mia caricatura.png" alt="Foto perfil">
@@ -80,23 +80,31 @@
             </div>
             <div class="cardsServices">
                 <article class="card">
-                    <img src="./images/services icons/cameraiconoAUTITO.png" alt="Icono fotografia">
+                    <div class="cardVisual">
+                        <img src="./images/services icons/cameraiconoAUTITO.png" alt="Icono fotografia">
+                    </div>
                     <h3>Photography</h3>
                     <p>Descripción</p>
                 </article>
                 <article class="card">
-                    <img src="./images/services icons/cineiconoAUTITO.png" alt="Icono edición de video">
-                    <h3>Video</h3>
+                    <div class="cardVisual">
+                        <img src="./images/services icons/cineiconoAUTITO.png" alt="Icono edición de video">
+                    </div>
+                    <h3>Video Edition</h3>
                     <p>Descripción</p>
                 </article>
                 <article class="card">
-                    <img src="./images/services icons/motioniconoAUTITO.png" alt="Icono motion graphics">
-                    <h3>Motion</h3>
-                    <p></p>
+                    <div class="cardVisual">
+                        <img src="./images/services icons/motioniconoAUTITO.png" alt="Icono motion graphics">
+                    </div>
+                    <h3>Motion Graphics</h3>
+                    <p>Descripción</p>
                 </article>
                 <article class="card">
-                    <img src="./images/services icons/UX-UIiconoAUTITO.png" alt="Icono ux/ui">
-                    <h3>UX/UI</h3>
+                    <div class="cardVisual">
+                        <img src="./images/services icons/UX-UIiconoAUTITO.png" alt="Icono ux/ui">
+                    </div>
+                    <h3>UX/UI Design</h3>
                     <p>Descripción</p>
                 </article>
             </div>
@@ -104,45 +112,54 @@
     </main>
 
     <footer class="mainFooter">
-        <div class="footerBg">
-            <div class="footerCta">
-                <h2>¿Proyect in mind?</h2>
-                <a href="contact.html" class="btn btn-primary">
-                    <span>Get in touch</span>
-                    <span class="btn-icon" aria-hidden="true">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </span>
-                </a>
+    <div class="footerBg">
+        <div class="footerCta">
+            <h2>¿Proyect in mind?</h2>
+            <a href="contact.html" class="btn btn-primary">
+                <span>Get in touch</span>
+                <span class="btn-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </span>
+            </a>
+        </div>
+
+        <div class="footerPanel">
+            <div class="footerTop">
+                <img src="./images/Logo mioiconoAUTITO.png" alt="Logo Hago Diseños" class="footerLogo" >
+                <p class="footerName">Hago Diseños | Nach Heredia</p>
             </div>
+
+            <hr class="footerDivider">
 
             <nav class="footerNav">
                 <a href="services.html">Services</a>
                 <a href="index.html#aboutMe">About me</a>
-                <a href="#top" class="back-to-top" aria-label="Volver arriba">↑</a>
+                <a href="index.html#top" class="backToTop" aria-label="Volver arriba">↑</a>
             </nav>
 
+            <hr class="footerDivider">
+
             <div class="socialIcons">
-                <a href="https://www.behance.net/ignacioheredia" target="_blank">
+                <a href="https://www.behance.net/ignacioheredia" target="_blank" title="Behance">
                     <img src="./images/social media icons/behance.png" alt="Behance">
                 </a>
-                <a href="https://www.instagram.com/hago.disenios/?hl=es" target="_blank">
+                <a href="https://www.instagram.com/hago.disenios/?hl=es" target="_blank" title="Instagram">
                     <img src="./images/social media icons/instagram (1).png" alt="Instagram">
                 </a>
-                <a href="https://www.linkedin.com/in/nachheredia/" target="_blank">
+                <a href="https://www.linkedin.com/in/nachheredia/" target="_blank" title="Linked In">
                     <img src="./images/social media icons/linkedin.png" alt="LinkedIn">
                 </a>
-                <a href="https://github.com/NachHeredia" target="_blank">
+                <a href="https://github.com/NachHeredia" target="_blank" title="Git Hub">
                     <img src="./images/social media icons/github.png" alt="GitHub">
                 </a>
             </div>
-
-            <p class="footer-name">Hago Diseños | Nach Heredia</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
 
