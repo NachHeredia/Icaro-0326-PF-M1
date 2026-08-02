@@ -389,7 +389,7 @@ main {
 }
 
 .mainFooter {
-    padding: var(--spacing-md);
+    
     margin: var(--spacing-md) var(--spacing-xl);
 }
 
@@ -992,6 +992,10 @@ body:has(.modalToggle:checked) {
         padding: var(--spacing-lg) var(--spacing-sm);
         min-height: 70vh;
     }
+    
+    .mainFooter{
+
+    }
 
     .aboutMe {
         grid-template-columns: 1fr;
@@ -1041,7 +1045,6 @@ body:has(.modalToggle:checked) {
         padding: var(--spacing-md);
     }
 
-    /* ===== SERVICES: CARDS ===== */
     .servicesSection {
         padding: 120px var(--spacing-sm) var(--spacing-md);
     }
@@ -1065,7 +1068,6 @@ body:has(.modalToggle:checked) {
         font-size: 1.1rem;
     }
 
-    /* ===== SERVICES: MODAL Y CARRUSEL ===== */
     .modalContent {
         width: 95%;
     }
